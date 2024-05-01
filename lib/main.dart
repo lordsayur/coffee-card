@@ -8,7 +8,21 @@ void main() {
         backgroundColor: Colors.brown,
         centerTitle: true,
       ),
-      body: const Text("Hello, ninjas!"),
+      body: const Home(),
     ),
   ));
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Directionality(
+      textDirection: TextDirection.ltr, // or rtl based on your app's layout
+      child: Center(
+        child: Text("Hello, ninjas!!"),
+      ),
+    );
+  }
 }
