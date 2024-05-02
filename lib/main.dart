@@ -18,10 +18,18 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Directionality(
+    return Directionality(
       textDirection: TextDirection.ltr, // or rtl based on your app's layout
-      child: Center(
-        child: Text("Hello, ninjas!!"),
+      child: Container(
+        color: Colors.orange,
+        padding: const EdgeInsets.all(20),
+        margin: const EdgeInsets.fromLTRB(10, 40, 0, 0),
+        child: const Text("Hello, ninjas",
+            style: TextStyle(
+                fontSize: 18,
+                letterSpacing: 4,
+                decoration: TextDecoration.underline,
+                fontStyle: FontStyle.italic)),
       ),
     );
   }
