@@ -10,11 +10,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:myapp/home.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Coffee Card smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MaterialApp(home: Home()));
 
     // Verify that our counter starts at 0.
-    expect(find.text('Hello, ninjas!!'), findsOneWidget);
+    expect(find.text('My Coffee Id'), findsOneWidget);
   });
 }
